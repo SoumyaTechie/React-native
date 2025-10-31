@@ -95,3 +95,140 @@ To learn more about React Native, take a look at the following resources:
 - [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
 - [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
 - [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+
+
+
+
+# React Native Google Sign-In with Firebase
+
+## Prerequisites
+
+* Node.js ≥ 18
+* Java 17 / OpenJDK 17
+* Android Studio (with emulator or physical device)
+* React Native ≥ 0.76
+* Firebase project created at [https://console.firebase.google.com](https://console.firebase.google.com)
+
+---
+
+## Steps to Set Up Google Sign-In
+
+### 1. Create Firebase Project
+
+1. Go to **Firebase Console → Add Project**
+2. Enter a project name and click **Continue**
+3. Disable Analytics if not required and click **Create Project**
+
+---
+
+### 2. Add Android App to Firebase
+
+1. Click **Add App → Android**
+2. Enter your **Package Name** (example: `com.rngooglesignin`)
+3. Download the generated `google-services.json` file
+4. Place it inside your project at:
+
+   ```
+   android/app/google-services.json
+   ```
+
+---
+
+### 3. Enable Google Sign-In in Firebase
+
+1. In Firebase Console, go to **Authentication → Sign-in method**
+2. Enable the **Google** provider and click **Save**
+
+---
+
+### 4. Update Gradle Configuration
+
+**android/build.gradle**
+
+```gradle
+buildscript {
+    dependencies {
+        classpath 'com.google.gms:google-services:4.4.2'
+    }
+}
+```
+
+**android/app/build.gradle**
+
+```gradle
+apply plugin: 'com.google.gms.google-services'
+
+dependencies {
+    implementation 'com.google.android.gms:play-services-auth:21.2.0'
+}
+```
+
+Ensure your `ext` block defines the following:
+
+```gradle
+minSdkVersion = 24
+compileSdkVersion = 36
+targetSdkVersion = 36
+```
+
+---
+
+### 5. Install Required NPM Packages
+
+```bash
+npm install @react-native-google-signin/google-signin
+```
+
+---
+
+### 6. Configure Google Sign-In in App Code
+
+**App.tsx**
+
+```tsx
+import React from 'react';
+import { Button, View } from 'react-native';
+import { GoogleSignin } from '@react-native-google-signin/google-signin';
+
+GoogleSignin.configure({
+  webClientId: 'YOUR_WEB_CLIENT_ID.apps.googleusercontent.com',
+});
+
+export default function App() {
+  const signIn = async () => {
+    try {
+      await GoogleSignin.hasPlayServices();
+      const userInfo = await GoogleSignin.signIn();
+      console.log(userInfo);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Button title="Sign in with Google" onPress={signIn} />
+    </View>
+  );
+}
+```
+
+Replace `YOUR_WEB_CLIENT_ID` with the value from
+**Firebase Console → Project Settings → Your Apps → Web Client ID**
+
+---
+
+### 7. Run the Application
+
+Start the Android emulator from Android Studio or via CLI, then run:
+
+```bash
+adb start-server
+adb devices
+npx react-native run-android
+```
+
+Once the app launches, tap **"Sign in with Google"** to sign in with your Google account.
+
+---
+
