@@ -231,63 +231,114 @@ npx react-native run-android
 Once the app launches, tap **"Sign in with Google"** to sign in with your Google account.
 
 ---
+---
 
+## 🚀 **React Native Google Sign-In with Firebase & Firestore**
 
-🚀** React Native Google Sign-In with Firebase & Firestore**
-🧩 1. Project Setup
-Created React Native app (npx react-native init RNGoogleSignin).
-Installed dependencies:
-Configured Android with SHA1 and google-services.json.
-🔑 2. Firebase Setup
-Created Firebase project → enabled Authentication → Google Sign-In.
-Added Android app using package name (com.rngooglesignin) + SHA1 fingerprint.
-Downloaded and placed google-services.json inside:
-Added classpath 'com.google.gms:google-services:X.X.X' in android/build.gradle.
-Applied apply plugin: 'com.google.gms.google-services' in android/app/build.gradle.
-🔥 3. Firestore Setup
-Opened Firestore Database → Create Database.
-Selected Test Mode and default location (e.g., asia-south1).
-Published default rules for development:
-👥 4. Google Sign-In Configuration
-Configured GoogleSignin with Web client ID from google-services.json (client_type:3):
-🔐 5. Authentication & Firestore Logic
-Implemented AuthContext to handle:
-Google Sign-In
-Firebase Auth credential
-User state persistence
-Firestore user document creation (if not exists)
+### 🧩 **1. Project Setup**
+
+* Created React Native app (`npx react-native init RNGoogleSignin`).
+* Installed dependencies:
+
+  ```bash
+  npm install @react-native-google-signin/google-signin @react-native-firebase/app @react-native-firebase/auth @react-native-firebase/firestore
+  ```
+* Configured Android with **SHA1** and **google-services.json**.
+
+---
+
+### 🔑 **2. Firebase Setup**
+
+* Created Firebase project → enabled **Authentication → Google Sign-In**.
+* Added Android app using package name (`com.rngooglesignin`) + SHA1 fingerprint.
+* Downloaded and placed `google-services.json` inside:
+
+  ```
+  android/app/google-services.json
+  ```
+* Added `classpath 'com.google.gms:google-services:X.X.X'` in `android/build.gradle`.
+* Applied `apply plugin: 'com.google.gms.google-services'` in `android/app/build.gradle`.
+
+---
+
+### 🔥 **3. Firestore Setup**
+
+* Opened **Firestore Database → Create Database**.
+* Selected **Test Mode** and **default location (e.g., asia-south1)**.
+* Published default rules for development:
+
+  ```js
+  rules_version = '2';
+  service cloud.firestore {
+    match /databases/{database}/documents {
+      match /{document=**} {
+        allow read, write: if true;
+      }
+    }
+  }
+  ```
+
+---
+
+### 👥 **4. Google Sign-In Configuration**
+
+* Configured `GoogleSignin` with **Web client ID** from `google-services.json` (`client_type:3`):
+
+  ```js
+  GoogleSignin.configure({
+    webClientId: 'YOUR_WEB_CLIENT_ID.apps.googleusercontent.com',
+  });
+  ```
+
+---
+
+### 🔐 **5. Authentication & Firestore Logic**
+
+* Implemented `AuthContext` to handle:
+
+  * Google Sign-In
+  * Firebase Auth credential
+  * User state persistence
+  * Firestore user document creation (if not exists)
+
 ✅ When user signs in:
-Google returns idToken.
-FirebaseAuth authenticates with GoogleAuthProvider.credential(idToken).
-If first login → adds user data to Firestore collection users.
-📂 6. Firestore Data Example
+
+1. Google returns `idToken`.
+2. `FirebaseAuth` authenticates with `GoogleAuthProvider.credential(idToken)`.
+3. If first login → adds user data to Firestore collection `users`.
+
+---
+
+### 📂 **6. Firestore Data Example**
+
+```
 users
  └── uid_12345
       ├── id: "uid_12345"
       ├── name: "Soumya"
       ├── email: "soumyaxxx@gmail.com"
       └── photo: "https://..."
-⚙️ 7. Testing
-Ran app on Android emulator → selected Google account → user stored in Firestore ✅
-Verified entry under Firestore → Data tab → users collection.
-🧠 Notes
-SHA1 is required for Google Sign-In to work on Android.
-Always use Web Client ID (type 3) in GoogleSignin.configure.
-Use @react-native-firebase packages — don’t mix with firebase (web SDK).
-Test mode DB expires in 30 days → switch to secure rules before release.
-For production: use authentication-based access rules.
-Would you like me to give you the production-ready Firestore rules snippet next (so you can apply it safely before release)?
-GoogleSignin.configure({
-  webClientId: 'YOUR_WEB_CLIENT_ID.apps.googleusercontent.com',
-});
-rules_version = '2';
-service cloud.firestore {
-  match /databases/{database}/documents {
-    match /{document=**} {
-      allow read, write: if true;
-    }
-  }
-}
-android/app/google-services.json
-npm install @react-native-google-signin/google-signin @react-native-firebase/app @react-native-firebase/auth @react-native-firebase/firestore
+```
+
+---
+
+### ⚙️ **7. Testing**
+
+* Ran app on Android emulator → selected Google account → user stored in Firestore ✅
+* Verified entry under **Firestore → Data tab → users collection**.
+
+---
+
+### 🧠 **Notes**
+
+* `SHA1` is required for Google Sign-In to work on Android.
+* Always use **Web Client ID** (type 3) in `GoogleSignin.configure`.
+* Use `@react-native-firebase` packages — don’t mix with `firebase` (web SDK).
+* Test mode DB expires in 30 days → switch to secure rules before release.
+* For production: use authentication-based access rules.
+
+---
+
+
+
  
