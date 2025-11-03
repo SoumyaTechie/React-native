@@ -1,33 +1,42 @@
 {
   "project_info": {
-    "project_number": "480734979637",
-    "project_id": "auth-3a3a1",
-    "storage_bucket": "auth-3a3a1.firebasestorage.app"
+    "project_number": "1062035059821",
+    "firebase_url": "https://react-http-dedb9-default-rtdb.firebaseio.com",
+    "project_id": "react-http-dedb9",
+    "storage_bucket": "react-http-dedb9.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:480734979637:android:d000d4891165548f20737c",
+        "mobilesdk_app_id": "1:1062035059821:android:ae4265cbbd7d2a29443b64",
         "android_client_info": {
           "package_name": "com.rngooglesignin"
         }
       },
       "oauth_client": [
         {
-          "client_id": "480734979637-hr1cdu8jgk112ei5kp0j4nm7k8carbc7.apps.googleusercontent.com",
+          "client_id": "1062035059821-hfmc77of242rfhvmc0t0d638he1h8heg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rngooglesignin",
+            "certificate_hash": "def30bc871e16d3705f69b6a809e3c066ee5fc2a"
+          }
+        },
+        {
+          "client_id": "1062035059821-pmv8k3ipviplenp24ou2v953fsdfv8h2.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDYb-BgDYgXs2T8mBEgu10wo2QCLx011Pc"
+          "current_key": "AIzaSyB2n2eGdadTVBpez2J_JSrptcu0P3qtVkg"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "480734979637-hr1cdu8jgk112ei5kp0j4nm7k8carbc7.apps.googleusercontent.com",
+              "client_id": "1062035059821-pmv8k3ipviplenp24ou2v953fsdfv8h2.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
