@@ -1,0 +1,291 @@
+    {
+    "categories": [
+    {
+      "id": 1,
+      "name": "Dairy, Bread & Eggs",
+      "image": "https://cdn.pixabay.com/photo/2016/06/30/22/23/eggs-1490054_1280.jpg",
+      "subcategories": [
+        {
+          "name": "Milk & Flavoured Milk",
+          "products": [
+            {
+              "id": "milk1",
+              "name": "Amul Full Cream Milk 1L",
+              "price": 65,
+              "image": "https://cdn.pixabay.com/photo/2016/03/05/22/45/milk-1231819_1280.jpg"
+            },
+            {
+              "id": "milk2",
+              "name": "Mother Dairy Toned Milk 1L",
+              "price": 58,
+              "image": "https://cdn.pixabay.com/photo/2014/04/03/11/50/milk-312163_1280.png"
+            }
+          ]
+        },
+        {
+          "name": "Bread & Buns",
+          "products": [
+            {
+              "id": "bread1",
+              "name": "Britannia Whole Wheat Bread",
+              "price": 45,
+              "image": "https://cdn.pixabay.com/photo/2016/10/27/22/52/bread-1772072_1280.jpg"
+            },
+            {
+              "id": "bread2",
+              "name": "Modern Milk Bread 400g",
+              "price": 40,
+              "image": "https://cdn.pixabay.com/photo/2017/02/14/03/03/bread-2067619_1280.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Eggs",
+          "products": [
+            {
+              "id": "egg1",
+              "name": "Farm Fresh Brown Eggs (6 pcs)",
+              "price": 70,
+              "image": "https://cdn.pixabay.com/photo/2017/03/14/13/38/eggs-2147687_1280.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Fruits & Vegetables",
+      "image": "https://cdn.pixabay.com/photo/2016/03/05/19/02/vegetables-1238251_1280.jpg",
+      "subcategories": [
+        {
+          "name": "Fresh Fruits",
+          "products": [
+            {
+              "id": "fruit1",
+              "name": "Bananas (6 pcs)",
+              "price": 50,
+              "image": "https://media.istockphoto.com/id/1494763483/photo/banana-concept.jpg?s=1024x1024&w=is&k=20&c=78W82jdC0SoOdrAKGRN62dgMqyKOb4iveR-z_wHAMYk="
+            },
+            {
+              "id": "fruit2",
+              "name": "Apples (1kg)",
+              "price": 180,
+              "image": "https://media.istockphoto.com/id/1412107731/photo/red-apple-fruit-in-basket-on-wooden-background.jpg?s=1024x1024&w=is&k=20&c=bvM-duKnCPRV3Co-hTwIbTT0o1DFY57wM2xOvV1_Nqc="
+            }
+          ]
+        },
+        {
+          "name": "Fresh Vegetables",
+          "products": [
+            {
+              "id": "veg1",
+              "name": "Tomatoes (1kg)",
+              "price": 45,
+              "image": "https://cdn.pixabay.com/photo/2016/03/05/19/02/chips-1238253_1280.jpg"
+            },
+            {
+              "id": "veg2",
+              "name": "Potatoes (1kg)",
+              "price": 35,
+              "image": "https://media.istockphoto.com/id/157430678/photo/three-potatoes.jpg?s=1024x1024&w=is&k=20&c=-0Kc9EyQqVx4Bi1uMLnnZVhL3fS08wTpkaBLH_0yrTU="
+            }
+          ]
+        }
+      ]
+    },
+     {
+      "id": 2,
+      "name": "Fruits & Vegetables",
+      "image": "https://cdn.pixabay.com/photo/2016/03/05/19/02/vegetables-1238251_1280.jpg",
+      "subcategories": [
+        {
+          "name": "Fresh Fruits",
+          "products": [
+            {
+              "id": "fruit1",
+              "name": "Bananas (6 pcs)",
+              "price": 50,
+              "image": "https://media.istockphoto.com/id/1494763483/photo/banana-concept.jpg?s=1024x1024&w=is&k=20&c=78W82jdC0SoOdrAKGRN62dgMqyKOb4iveR-z_wHAMYk="
+            },
+            {
+              "id": "fruit2",
+              "name": "Apples (1kg)",
+              "price": 180,
+              "image": "https://media.istockphoto.com/id/1412107731/photo/red-apple-fruit-in-basket-on-wooden-background.jpg?s=1024x1024&w=is&k=20&c=bvM-duKnCPRV3Co-hTwIbTT0o1DFY57wM2xOvV1_Nqc="
+            }
+          ]
+        },
+        {
+          "name": "Fresh Vegetables",
+          "products": [
+            {
+              "id": "veg1",
+              "name": "Tomatoes (1kg)",
+              "price": 45,
+              "image": "https://cdn.pixabay.com/photo/2016/03/05/19/02/chips-1238253_1280.jpg"
+            },
+            {
+              "id": "veg2",
+              "name": "Potatoes (1kg)",
+              "price": 35,
+              "image": "https://media.istockphoto.com/id/157430678/photo/three-potatoes.jpg?s=1024x1024&w=is&k=20&c=-0Kc9EyQqVx4Bi1uMLnnZVhL3fS08wTpkaBLH_0yrTU="
+            }
+          ]
+        }
+      ]
+    },
+     {
+      "id": 2,
+      "name": "Fruits & Vegetables",
+      "image": "https://media.istockphoto.com/id/1494763483/photo/banana-concept.jpg?s=1024x1024&w=is&k=20&c=78W82jdC0SoOdrAKGRN62dgMqyKOb4iveR-z_wHAMYk=",
+      "subcategories": [
+        {
+          "name": "Fresh Fruits",
+          "products": [
+            {
+              "id": "fruit1",
+              "name": "Bananas (6 pcs)",
+              "price": 50,
+              "image": "https://media.istockphoto.com/id/1494763483/photo/banana-concept.jpg?s=1024x1024&w=is&k=20&c=78W82jdC0SoOdrAKGRN62dgMqyKOb4iveR-z_wHAMYk="
+            },
+            {
+              "id": "fruit2",
+              "name": "Apples (1kg)",
+              "price": 180,
+              "image": "https://media.istockphoto.com/id/1412107731/photo/red-apple-fruit-in-basket-on-wooden-background.jpg?s=1024x1024&w=is&k=20&c=bvM-duKnCPRV3Co-hTwIbTT0o1DFY57wM2xOvV1_Nqc="
+            }
+          ]
+        },
+        {
+          "name": "Fresh Vegetables",
+          "products": [
+            {
+              "id": "veg1",
+              "name": "Tomatoes (1kg)",
+              "price": 45,
+              "image": "https://cdn.pixabay.com/photo/2016/03/05/19/02/chips-1238253_1280.jpg"
+            },
+            {
+              "id": "veg2",
+              "name": "Potatoes (1kg)",
+              "price": 35,
+              "image": "https://media.istockphoto.com/id/157430678/photo/three-potatoes.jpg?s=1024x1024&w=is&k=20&c=-0Kc9EyQqVx4Bi1uMLnnZVhL3fS08wTpkaBLH_0yrTU="
+            }
+          ]
+        }
+      ]
+    },
+     {
+      "id": 3,
+      "name": "Snacks & Munchies",
+      "image": "https://cdn.pixabay.com/photo/2019/12/25/17/55/cinnamon-roll-4719023_1280.jpg",
+      "subcategories": [
+        {
+          "name": "Chips & Crisps",
+          "products": [
+            {
+              "id": "chips1",
+              "name": "Lays Magic Masala 90g",
+              "price": 20,
+              "image": "https://i0.wp.com/spicetown.fi/wp-content/uploads/Lays-Indias-Magic-Masala-52-g.gif"
+            },
+            {
+              "id": "chips2",
+              "name": "Bingo Mad Angles 80g",
+              "price": 25,
+              "image": "https://m.media-amazon.com/images/I/81UJbyUCE0L._SL1500_.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Namkeen",
+          "products": [
+            {
+              "id": "namkeen1",
+              "name": "Haldiram Bhujia 200g",
+              "price": 55,
+              "image": "https://cdn0.woolworths.media/content/wowproductimages/large/297036.jpg"
+            },
+             {
+              "id": "namkeen2",
+              "name": "Haldiram All In One 200g",
+              "price": 50,
+              "image": "https://5.imimg.com/data5/SELLER/Default/2024/3/403230120/HB/LS/KA/105406097/red-chilli-powder-100-g-pouch-500x500.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Snacks & Munchies",
+      "image": "https://cdn.pixabay.com/photo/2019/12/25/17/55/cinnamon-roll-4719023_1280.jpg",
+      "subcategories": [
+        {
+          "name": "Chips & Crisps",
+          "products": [
+            {
+              "id": "chips1",
+              "name": "Lays Magic Masala 90g",
+              "price": 20,
+              "image": "https://i0.wp.com/spicetown.fi/wp-content/uploads/Lays-Indias-Magic-Masala-52-g.gif"
+            },
+            {
+              "id": "chips2",
+              "name": "Bingo Mad Angles 80g",
+              "price": 25,
+              "image": "https://m.media-amazon.com/images/I/81UJbyUCE0L._SL1500_.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Namkeen",
+          "products": [
+            {
+              "id": "namkeen1",
+              "name": "Haldiram Bhujia 200g",
+              "price": 55,
+              "image": "https://cdn0.woolworths.media/content/wowproductimages/large/297036.jpg"
+            },
+             {
+              "id": "namkeen2",
+              "name": "Haldiram All In One 200g",
+              "price": 50,
+              "image": "https://5.imimg.com/data5/SELLER/Default/2024/3/403230120/HB/LS/KA/105406097/red-chilli-powder-100-g-pouch-500x500.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Cold Drinks & Juices",
+      "image": "https://cdn.pixabay.com/photo/2016/07/21/11/17/drink-1532300_1280.jpg",
+      "subcategories": [
+        {
+          "name": "Soft Drinks",
+          "products": [
+            {
+              "id": "drink1",
+              "name": "Coca Cola 1.25L",
+              "price": 65,
+              "image": "https://cdn.pixabay.com/photo/2017/06/14/18/31/coca-cola-2408750_1280.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Juices",
+          "products": [
+            {
+              "id": "juice1",
+              "name": "Real Mixed Fruit Juice 1L",
+              "price": 120,
+              "image": "https://cdn.pixabay.com/photo/2016/03/05/22/46/juice-1231823_1280.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+    }
+  

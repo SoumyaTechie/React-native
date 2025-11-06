@@ -1,0 +1,61 @@
+{
+  "products": [
+    {
+      "id": "milk1",
+      "name": "Amul Full Cream Milk 1L",
+      "price": 65,
+      "category": "Dairy, Bread & Eggs",
+      "subcategory": "Milk & Flavoured Milk",
+      "image": "https://cdn.pixabay.com/photo/2016/03/05/22/45/milk-1231819_1280.jpg"
+    },
+    {
+      "id": "bread1",
+      "name": "Britannia Whole Wheat Bread",
+      "price": 45,
+      "category": "Dairy, Bread & Eggs",
+      "subcategory": "Bread & Buns",
+      "image": "https://cdn.pixabay.com/photo/2016/10/27/22/52/bread-1772072_1280.jpg"
+    },
+    {
+      "id": "egg1",
+      "name": "Farm Fresh Brown Eggs (6 pcs)",
+      "price": 70,
+      "category": "Dairy, Bread & Eggs",
+      "subcategory": "Eggs",
+      "image": "https://cdn.pixabay.com/photo/2017/03/14/13/38/eggs-2147687_1280.jpg"
+    },
+    {
+      "id": "apple1",
+      "name": "Fresh Apples (1kg)",
+      "price": 180,
+      "category": "Fruits & Vegetables",
+      "subcategory": "Fresh Fruits",
+      "image": "https://media.istockphoto.com/id/1412107731/photo/red-apple-fruit-in-basket-on-wooden-background.jpg?s=1024x1024&w=is&k=20&c=bvM-duKnCPRV3Co-hTwIbTT0o1DFY57wM2xOvV1_Nqc="
+    },
+    {
+      "id": "coffee1",
+      "name": "Nescafe Classic Coffee 200g",
+      "price": 300,
+      "category": "Beverages",
+      "subcategory": "Tea & Coffee",
+      "image": "https://cdn.pixabay.com/photo/2016/08/15/06/52/coffee-1599422_1280.jpg"
+    },
+     {
+      "id": "apple1",
+      "name": "Fresh Apples (1kg)",
+      "price": 180,
+      "category": "Fruits & Vegetables",
+      "subcategory": "Fresh Fruits",
+      "image": "https://media.istockphoto.com/id/1412107731/photo/red-apple-fruit-in-basket-on-wooden-background.jpg?s=1024x1024&w=is&k=20&c=bvM-duKnCPRV3Co-hTwIbTT0o1DFY57wM2xOvV1_Nqc="
+    },
+    {
+      "id": "coffee1",
+      "name": "Nescafe Classic Coffee 200g",
+      "price": 300,
+      "category": "Beverages",
+      "subcategory": "Tea & Coffee",
+      "image": "https://cdn.pixabay.com/photo/2016/08/15/06/52/coffee-1599422_1280.jpg"
+    }
+  ]}
+
+
